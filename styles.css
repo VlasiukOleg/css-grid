@@ -126,6 +126,19 @@
   font-family: var(--common-font);
   margin-bottom: 24px;
 }
+
+.socials-list {
+  display: grid;
+  gap: 24px 8px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .socials-list {
+    gap: 24px;
+  }
+}
+
 .social-link {
   padding: 8px;
   color: var(--common-black, #2f2f37);
@@ -134,6 +147,12 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5px;
+
+  display: grid;
+  grid-template-columns: 32px 1fr;
+
+  align-items: center;
+  justify-items: center;
 }
 
 .socials-item:nth-child(1) .social-link {
