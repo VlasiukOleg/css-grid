@@ -84,8 +84,27 @@
   font-family: var(--common-font);
 }
 
+.blog {
+  display: grid;
+  gap: 48px;
+}
+
 .blog-link {
   color: var(--common-black);
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .blog-link {
+    display: grid;
+    grid-template-columns: 264px 1fr;
+    gap: 24px;
+  }
+
+  .blog {
+    gap: 36px;
+  }
 }
 
 .blog-title {
